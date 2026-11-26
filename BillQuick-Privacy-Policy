@@ -1,1 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — BillQuick</title>
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #4b5563;
+      --border: #e2e8f0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 24px 16px;
+    }
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 4px 18px rgba(15, 23, 42, 0.06);
+    }
+    .header {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: #ffffff;
+      padding: 28px 32px;
+    }
+    .header h1 {
+      margin: 0 0 6px 0;
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+    }
+    .header p {
+      margin: 0;
+      font-size: 14px;
+      color: #ccfbf1;
+    }
+    .content {
+      padding: 28px 32px;
+    }
+    h2 {
+      color: var(--primary);
+      font-size: 18px;
+      margin-top: 26px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 6px;
+    }
+    p, li {
+      font-size: 14.5px;
+      color: var(--text);
+    }
+    ul {
+      padding-left: 20px;
+      margin: 8px 0 14px 0;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    .callout {
+      background: #f0fdfa;
+      border-left: 4px solid var(--primary);
+      padding: 12px 16px;
+      border-radius: 6px;
+      margin: 16px 0;
+      font-size: 14px;
+      color: #134e4a;
+    }
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .footer {
+      border-top: 1px solid var(--border);
+      padding: 18px 32px;
+      font-size: 13px;
+      color: var(--muted);
+      background: #f9fafb;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Privacy Policy for BillQuick</h1>
+      <p>Effective Date: November 22, 2026 &bull; GST, Khata &amp; Inventory Billing App</p>
+    </div>
 
+    <div class="content">
+      <p>
+        This Privacy Policy explains how <strong>BillQuick</strong> ("we," "our," or "us") handles information when you use the BillQuick mobile application ("App"). We built BillQuick as an offline-first business utility so your billing, tax, and customer records stay under your control on your device.
+      </p>
+
+      <div class="callout">
+        <strong>Summary:</strong> BillQuick does <strong>not</strong> upload or store your business profile, invoices, Khata entries, or inventory items on our own external cloud servers. Your business records remain locally on your device unless you choose to export or share them.
+      </div>
+
+      <h2>1. Information Stored Locally on Your Device</h2>
+      <p>When you use BillQuick, the following information is stored locally on your device using on-device storage (<code>AsyncStorage</code>):</p>
+      <ul>
+        <li><strong>Business &amp; Tax Profile:</strong> Business name, GSTIN, GST state code, invoice prefix, UPI ID, phone number, business address, and optional business logo or authorized signature images that you upload from your photo library.</li>
+        <li><strong>Invoices &amp; Sales Records:</strong> Invoice numbers, dates, line items, quantities, measurement units, HSN/SAC codes, GST calculations, discounts, and payment statuses.</li>
+        <li><strong>Customer &amp; Monthly Khata Ledger Data:</strong> Customer names, mobile numbers, ration/credit entries, confirmation or dispute notes, partial payments, and surplus credit balances.</li>
+        <li><strong>Inventory &amp; Stock Data:</strong> Product names, rates, units, HSN/SAC codes, GST rates, stock quantities, and low-stock alert thresholds.</li>
+        <li><strong>App Preferences &amp; License Status:</strong> Selected plan tier (Free, Ad-Supported, or Lifetime Pro) and offline Pro activation metadata.</li>
+      </ul>
+
+      <h2>2. How Your Information Is Used</h2>
+      <ul>
+        <li>To generate GST-compliant Tax Invoices, Bills of Supply, and Monthly Khata Statement PDFs on your device.</li>
+        <li>To generate scannable UPI QR codes embedded inside your unpaid PDF invoices and Khata statements.</li>
+        <li>To generate CA-ready GSTR-1 / GSTR-3B CSV sales and tax export reports.</li>
+        <li>To create offline JSON backup files when you manually initiate an export or restore.</li>
+        <li>To prepare pre-filled payment reminders or ledger summaries when you tap to share via WhatsApp or your device's system share sheet.</li>
+      </ul>
+
+      <h2>3. Device Permissions</h2>
+      <ul>
+        <li><strong>Photo Library / Media Access:</strong> Requested only when you choose to upload a business logo or signature image to appear on your PDF invoices.</li>
+        <li><strong>Network / Internet Access:</strong> Used to load advertisements (in the Ad-Supported tier), verify Google Play In-App Purchases, and open external share links such as WhatsApp.</li>
+      </ul>
+
+      <h2>4. Third-Party Services &amp; SDKs</h2>
+      <p>BillQuick uses trusted third-party services for advertising and in-app purchases:</p>
+      <ul>
+        <li>
+          <strong>Google AdMob (Google Mobile Ads SDK):</strong> In the Ad-Supported tier, BillQuick displays banner ads and optional rewarded video ads. Google AdMob may collect and process device identifiers (such as the Android Advertising ID), IP address, app interaction data, and diagnostic information to serve, personalize, or measure ads and prevent fraud. Learn more at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy &amp; Terms</a> and <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">How Google uses information from sites or apps that use our services</a>.
+        </li>
+        <li>
+          <strong>Google Play Billing:</strong> If you purchase BillQuick Lifetime Pro through Google Play, payment processing and purchase verification are handled directly by Google Play. We do not receive or store your credit card, debit card, or bank account credentials. See the <a href="https://payments.google.com/payments/apis-secure/u/0/get_legal_document?ldo=0&ldt=privacynotice" target="_blank" rel="noopener noreferrer">Google Payments Privacy Notice</a>.
+        </li>
+      </ul>
+
+      <h2>5. Data Sharing &amp; User-Initiated Exports</h2>
+      <p>
+        We do not sell, rent, or trade your business or customer data. Data leaves your device only when you explicitly trigger an action—such as sharing a PDF invoice, CSV tax report, or JSON backup file via WhatsApp, email, or another app installed on your phone.
+      </p>
+
+      <h2>6. Data Retention &amp; Deletion</h2>
+      <p>
+        Because your invoices, Khata ledgers, and inventory records are stored locally on your device, you have full control over them. You can edit or void records inside the App, export a JSON backup at any time, or permanently delete all locally stored App data by clearing the App's storage in your Android device settings or uninstalling BillQuick.
+      </p>
+
+      <h2>7. Children's Privacy</h2>
+      <p>
+        BillQuick is designed for shop owners, merchants, freelancers, and business operators. It is not directed to children under the age of 13 (or the applicable age of digital consent in your jurisdiction), and we do not knowingly collect personal information from children.
+      </p>
+
+      <h2>8. Changes to This Privacy Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time to reflect app updates or legal requirements. Any updated version will be posted on this page with a revised Effective Date.
+      </p>
+
+      <h2>9. Contact Us</h2>
+      <p>
+        If you have questions or requests regarding this Privacy Policy or BillQuick, please contact us at:<br />
+        <strong>Email:</strong> shillmaster7@gmail.com <em>(replace with your support email before publishing)</em>
+      </p>
+    </div>
+
+    <div class="footer">
+      &copy; 2026 BillQuick. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>
